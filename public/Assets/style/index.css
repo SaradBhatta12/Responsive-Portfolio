@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+
+* {
+    padding: 0%;
+    margin: 0%;
+    color: aqua;
+    font-family: "Oxanium", sans-serif;
+
+}
+
+html,
+body {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: black;
+    color: wheat;
+    position: relative;
+}
+
+
+
+
+#home .header img {
+    height: 50px;
+    width: 50px;
+}
+
+
+.header {
+    display: flex;
+    /* display: none; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 1rem;
+    /* background-color: rgb(0, 0, 0); */
+
+}
+
+
+
+
+.navlinks {
+    display: flex;
+    gap: 2rem;
+    /* display: none; */
+
+}
+
+.navlinks a {
+    color: aqua;
+    text-decoration: none;
+    transition: all 0.5s;
+
+}
+
+.navlinks a:hover {
+    color: blue;
+}
+
+.header button {
+    cursor: pointer;
+    background-color: blue;
+    padding: 0.5rem;
+    color: aqua;
+    font-family: "Oxanium", sans-serif;
+    border: none;
+    border-radius: 2px;
+}
+
+.header .menuBar span {
+    font-size: 30px;
+}
+
+.header .menuBar {
+    display: none;
+}
+
+.hero {
+    height: 39rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero h1 {
+    font-size: 10vmax;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#Projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#Projects .card {
+    border: solid aqua 2px;
+    width: 40vmax;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.6s;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card:hover {
+    scale: 1.01;
+    box-shadow: 0px 5px 24px 12px rgba(150, 150, 230, 0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+    object-position: center;
+    opacity: 0.6;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    color: aqua;
+}
+
+.card p {
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: aqua;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 8px;
+}
+
+.buttons button {
+    background-color: transparent;
+    padding: 0.6rem;
+    border: solid aqua 1px;
+    cursor: pointer;
+    font-family: "Oxanium", sans-serif;
+    color: aqua;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#about {
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+.aboutfull h1 {
+    font-size: 4vmax;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+} */
+
+.skills {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    gap: 2rem;
+}
+
+.skill {
+    border: solid aqua 2px;
+    padding: 3vmax;
+    font-size: 1rem;
+    transition: all 0.4s;
+    cursor: default;
+}
+
+.skill:hover {
+    box-shadow: 0px 5px 24px 12px rgba(150, 150, 230, 0.2);
+    scale: 1.1;
+}
+
+#contact {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#contact h1 {
+    font-size: 10vmax;
+}
+
+.formsec {
+    border: solid aqua 1px;
+    border-radius: 10px;
+    width: 50%;
+    padding: 20px;
+
+}
+
+.formsec form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+form input {
+    padding: 10px;
+    background-color: transparent;
+    border: solid aqua 1px;
+    border-radius: 3px;
+    margin: 10px;
+    box-shadow: 0px 5px 24px 12px rgba(150, 150, 230, 0.2);
+    font-size: 20px;
+}
+
+form textarea {
+    background-color: transparent;
+    border: solid aqua 1px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 5px 24px 12px rgba(150, 150, 230, 0.2);
+    border-radius: 10px;
+}
+
+form button {
+    width: fit-content;
+    padding: 10px;
+    background-color: rgb(26, 48, 88);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+}
+
+
+.moheader {
+    position: sticky;
+    display: none;
+
+}
+
+.moheader .mo-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    margin: 10px;
+    font-size: 20px;
+
+}
+
+.moheader .mo-links a {
+    text-decoration: none;
+    color: aqua;
+    transition: all 0.5s;
+
+}
+
+.moheader .mo-links a:hover {
+    font-size: 21px;
+    color: blue;
+
+}

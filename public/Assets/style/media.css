@@ -1,0 +1,30 @@
+@media(max-width:650px) {
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formsec {
+        width: 80%;
+    }
+
+    .navlinks {
+        display: none;
+    }
+
+    .header .menuBar {
+        display: flex;
+    }
+
+    .header button {
+        display: none;
+    }
+
+    .moheader {
+        transition: all 0.6s;
+        display: block;
+
+    }
+}
