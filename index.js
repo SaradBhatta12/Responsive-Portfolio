@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const ejs = require("ejs");
 const bodyParser = require("body-parser");
@@ -16,7 +17,7 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.render("main", { message: req.flash("success") });
+  res.render("index", { message: req.flash("success") });
 });
 
 const transporter = nodemailer.createTransport({
@@ -46,9 +47,8 @@ app.post("/", (req, res) => {
   });
 });
 
-const port = 3000 || process.env.PORT;
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+app.listen(process.env.PORT, () => {
+  console.log(`Server is running on port ${process.env.PORT}`);
 });
 
 module.exports = app;

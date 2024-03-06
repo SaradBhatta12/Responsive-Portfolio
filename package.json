@@ -6,14 +6,15 @@
   "scripts": {
     "start": "node index",
     "build": "vercel deploy --prod",
-    "dev":"nodemon index.js",
-    "vercel-build":"echo hello"
+    "dev": "nodemon index.js",
+    "vercel-build": "echo hello"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
     "connect-flash": "^0.1.1",
+    "dotenv": "^16.4.5",
     "ejs": "^3.1.9",
     "express": "^4.18.3",
     "express-session": "^1.18.0",
