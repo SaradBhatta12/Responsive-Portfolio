@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "build": "netlify deploy --prod"
+    "build": "vercel deploy --prod",
+    "dev":"nodemon index.js",
+    "vercel-build":"echo hello"
   },
   "author": "",
   "license": "ISC",
