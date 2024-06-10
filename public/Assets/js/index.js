@@ -60,6 +60,11 @@ const yourCard = {
     desc: "Discover a powerful Full-Stack Todo App using Node.js, Express, and EJS. This open-source project offers a seamless task management experience with efficient back-end processing and dynamic front-end rendering. Enhance your productivity and organization",
     imgurl: "/Assets/image/weatherapp (1).jpg",
   },
+  blog: {
+    title: "Full-Stack Blog App",
+    desc: "This Blog app is a full-stack app on Next.js, enabling easy sharing of daily life anecdotes, activities, and musings. Seamlessly create, edit, and delete posts for a hassle-free blogging experience. Join me in sharing experiences and reflections!",
+    imgurl: "/Assets/image/blog.png",
+  },
 };
 
 const cards = Object.entries(yourCard);
@@ -77,5 +82,5 @@ cards.forEach((item) => {
 });
 
 function openresume() {
-  location.href = "/Assets/image/sarad~bhatta~Resume (1).pdf";
+  location.href = "/Assets/image/SARAD.pdf";
 }
